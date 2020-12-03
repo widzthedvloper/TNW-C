@@ -88,7 +88,82 @@ body {
   overflow: auto;
 }
 /*style for the footer*/
-
+main footer {
+	 display: flex;
+	 flex-direction: column;
+	 width: 100%;
+}
+ main footer .top {
+	 padding-top: 40px;
+}
+ main footer .bottom {
+	 padding-bottom: 40px;
+}
+ main footer .gray {
+	 display: flex;
+	 background: #131313;
+}
+ main footer .gray .social-media {
+	 padding: 0px;
+	 list-style-type: none;
+	 width: 100%;
+	 display: flex;
+	 justify-content: center;
+}
+ main footer .gray .social-media li {
+	 display: flex;
+	 justify-content: center;
+	 background-color: #555;
+	 display: inline-block;
+	 margin: 10px;
+	 width: 30px;
+	 height: 30px;
+	 padding: 5px;
+	 text-align: center;
+	 border-radius: 50%;
+}
+ main footer .gray .social-media li a {
+	 color: #fff;
+}
+ main footer .gray .social-media li a i {
+	 margin: 6px;
+}
+ main footer .gray .link-menu {
+	 padding: 0px;
+	 list-style-type: none;
+	 width: 100%;
+	 display: flex;
+	 justify-content: center;
+}
+ main footer .gray .link-menu li {
+	 display: flex;
+	 justify-content: center;
+	 display: inline-block;
+	 padding: 5px;
+	 font-size: 13px;
+	 text-align: center;
+}
+ main footer .gray .link-menu li a {
+	 text-decoration: none;
+	 color: #d3d3d3;
+}
+ main footer .black-footer {
+	 background: #000;
+	 width: 100%;
+   height: 200px;
+	 padding: 40px;
+	 box-sizing: border-box;
+	 text-align: center;
+}
+ main footer .black-footer p {
+	 color: #fff;
+	 font-size: 14px;
+   margin: 0px auto;
+}
+ main footer .black-footer p img {
+	 height: 9px;
+	 max-width: 100%;
+}
   /*style for small screen*/
 @media only screen and (max-width: 940px) {
   .black-nav {
