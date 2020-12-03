@@ -1,3 +1,7 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+}
 .logo {
   width: 100%;
   text-align: center;
@@ -78,6 +82,14 @@
   float: right;
 }
 
+.main-content {
+  margin-top: 5px;
+  height: 100vh;
+  overflow: auto;
+}
+/*style for the footer*/
+
+  /*style for small screen*/
 @media only screen and (max-width: 940px) {
   .black-nav {
     display: none;
@@ -113,7 +125,7 @@
     color: red;
   }
 }
-
+/*style for medium screen*/
 @media only screen and (min-width: 940px) and (max-width: 1006px) {
   .black-nav {
     display: block;
@@ -163,7 +175,7 @@
   }
 
 }
-
+/*style for big screen*/
 @media only screen and (min-width: 1007px) {
   .logo {
     display: none;
