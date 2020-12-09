@@ -8,6 +8,10 @@ body {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -224,6 +228,13 @@ body {
   margin-top: 15px;
 }
 
+.third-grid .third-grid-container .transparent-pink2 span {
+  color: #d3d3d3;
+}
+
+.third-grid .third-grid-container .transparent-pink2 a {
+  color: #a9a9a9;
+}
 .third-grid .third-grid-container {
   position: relative;
 }
@@ -330,15 +341,7 @@ body {
 .fourth-grid .list {
   box-sizing: border-box;
   list-style-position: inside;
-}
-
-.fourth-grid .list li::before {
-  content: "\2022";
-  color: red;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1.03em;
+  color: #f43;
 }
 
 .fourth-grid .fourth-grid-container .red-header {
@@ -760,6 +763,106 @@ body {
 @media only screen and (min-width: 768px) and (max-width: 1003px) {
   .program {
     display: none;
+  }
+
+  .third-grid .six {
+    display: none;
+  }
+
+  .fifth-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "num num num"
+      "num1 num2 num3"
+      "num4 num5 num6"
+      "num7 num8 .";
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .fifth-grid .one {
+    grid-area: num;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fifth-grid .second-grid-container .header {
+    flex: 50%;
+  }
+
+  .fifth-grid .second-grid-container .link {
+    flex: 50%;
+    text-align: right;
+    padding-top: 5px;
+  }
+
+  .fifth-grid .second-grid-container .second-grid-image {
+    height: 211px;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  .fourth-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "num1 num2"
+      "num3 num4"
+      "num5 num6"
+      "num7 num8"
+      "num9 num10"
+      "num11 num12";
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .third-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "num1 num1 ."
+      "num3 num3 ."
+      "num5 num6 num7";
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .third-grid .two .third-grid-list li {
+    display: inline;
+    border-right: 1px solid #f43;
+    padding-right: 5px;
+  }
+
+  .third-grid .two .third-grid-list .last {
+    display: inline;
+    padding-right: 5px;
+    border: none;
+  }
+
+  .third-grid .one {
+    grid-area: num1;
+  }
+
+  .third-grid .two {
+    grid-area: num3;
+  }
+
+  .third-grid .three {
+    grid-area: num5;
+  }
+
+  .third-grid .four {
+    grid-area: num6;
+  }
+
+  .third-grid .five {
+    grid-area: num7;
   }
 
   .second-grid {
