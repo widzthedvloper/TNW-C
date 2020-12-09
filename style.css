@@ -1154,7 +1154,7 @@ a {
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(2, auto);
     grid-template-areas:
-      "num1 num1 num2 num2"
+      "num1 num1 num1 num2"
       "num3 num4 num5 num6";
     grid-gap: 10px;
     padding: 10px;
@@ -1179,6 +1179,7 @@ a {
 
   .third-grid .two {
     grid-area: num2;
+    text-align: right;
   }
 
   .third-grid .three {
