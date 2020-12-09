@@ -463,7 +463,7 @@ a {
 
 /* style for small screen */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .black-nav,
   .white-nav .menu-white .tnw {
     display: none;
@@ -1039,7 +1039,7 @@ a {
 
 /* style for big screen */
 
-@media only screen and (min-width: 1003px) {
+@media only screen and (min-width: 1004px) {
   .program {
     display: none;
   }
@@ -1097,4 +1097,203 @@ a {
     border-left: 1px solid #d3d3d3;
     padding: 15px;
   }
+
+  .fifth-grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "num num num num"
+      "num1 num2 num3 num4"
+      "num5 num6 num7 num8";
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .fifth-grid .one {
+    grid-area: num;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fifth-grid .second-grid-container .header {
+    flex: 50%;
+  }
+
+  .fifth-grid .second-grid-container .link {
+    flex: 50%;
+    text-align: right;
+    padding-top: 5px;
+  }
+
+  .fifth-grid .second-grid-container .second-grid-image {
+    height: 211px;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  .fourth-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "num1 num2 num3"
+      "num4 num5 num6"
+      "num7 num8 num9"
+      "num10 num11 num12";
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .third-grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "num1 num1 num2 num2"
+      "num3 num4 num5 num6";
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .third-grid .two .third-grid-list li {
+    display: inline;
+    border-right: 1px solid #f43;
+    padding-right: 5px;
+  }
+
+  .third-grid .two .third-grid-list .last {
+    display: inline;
+    padding-right: 5px;
+    border: none;
+  }
+
+  .third-grid .one {
+    grid-area: num1;
+  }
+
+  .third-grid .two {
+    grid-area: num2;
+  }
+
+  .third-grid .three {
+    grid-area: num3;
+  }
+
+  .third-grid .four {
+    grid-area: num4;
+  }
+
+  .third-grid .five {
+    grid-area: num5;
+  }
+
+  .third-grid .six {
+    grid-area: num6;
+  }
+
+  .second-grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "one one one one"
+      "two three four five"
+      "six seven eight nine";
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .second-grid .second-grid-container .second-grid-image {
+    height: 120px;
+  }
+
+  .second-grid .one {
+    grid-area: one;
+  }
+
+  .second-grid .two {
+    grid-area: two;
+  }
+
+  .second-grid .three {
+    grid-area: three;
+  }
+
+  .second-grid .four {
+    grid-area: four;
+  }
+
+  .second-grid .five {
+    grid-area: five;
+  }
+
+  .second-grid .six {
+    grid-area: six;
+  }
+
+  .second-grid .seven {
+    grid-area: seven;
+  }
+
+  .second-grid .eight {
+    grid-area: eight;
+  }
+
+  .second-grid .nine {
+    grid-area: nine;
+  }
+
+  .first-grid {
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "first first second"
+      "first first third";
+    grid-gap: 10px;
+    height: 632px;
+  }
+
+  .first-foto {
+    grid-area: first;
+    position: relative;
+  }
+
+  .second-grid-image {
+    width: 100%;
+    height: 75px;
+  }
+
+  .second-grid-text {
+    width: 100%;
+    height: 75px;
+  }
+
+  .second-grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second-foto {
+    grid-area: second;
+    position: relative;
+  }
+
+  .third-foto {
+    grid-area: third;
+    position: relative;
+  }
+
+  .container-text {
+    width: 95%;
+    margin: 0 auto;
+    height: 114px;
+    position: absolute;
+    padding-left: 10px;
+    bottom: 40px;
+  }
+
 }
