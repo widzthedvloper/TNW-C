@@ -301,12 +301,257 @@ body {
   background-image: url(assets/screenshot4.png);
 }
 
+.fourth-grid .container-flex {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff4f2;
+}
+
+.fourth-grid .container-flex .text {
+  width: 75%;
+  height: 120px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.fourth-grid .container-flex .image {
+  background-image: url(assets/grid1.png);
+  background-position: center;
+  background-size: cover;
+  width: 25%;
+  height: 120px;
+  margin-top: 2px;
+}
+
+.fourth-grid .foto-grid {
+  height: 240px;
+}
+
+.fourth-grid .list {
+  box-sizing: border-box;
+  list-style-position: inside;
+}
+
+.fourth-grid .list li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.03em;
+}
+
+.fourth-grid .fourth-grid-container .red-header {
+  color: #f43;
+  margin: 20px 0;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.fourth-grid .fourth-grid-container .container-flex .text h5 {
+  color: #f43;
+}
+
+.fourth-grid .fourth-grid-container .container-flex .text a {
+  color: #f43;
+  text-decoration: none;
+}
+
+.fourth-grid .list li {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.fourth-grid .list li a {
+  text-decoration: none;
+  color: grey;
+}
+
+.second-grid-container .image1 {
+  background-image: url(assets/box1.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.second-grid-container .image2 {
+  background-image: url(assets/box2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.second-grid-container .image3 {
+  background-image: url(assets/boxo3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.second-grid-container .image4 {
+  background-image: url(assets/box4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.second-grid-container .image5 {
+  background-image: url(assets/box5.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.second-grid-container .image6 {
+  background-image: url(assets/third-grid-image.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.second-grid-container .image7 {
+  background-image: url(assets/box7.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.second-grid-container .image8 {
+  background-image: url(assets/box8.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.second-grid .second-grid-container h2 {
+  color: #f42;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.second-grid-text h5 {
+  margin-bottom: 5px;
+}
+
+.fifth-grid .second-grid-container .second-grid-text a {
+  text-decoration: line-through;
+}
+
+.fifth-grid .second-grid-container .second-grid-text span {
+  color: #484848;
+}
+
+.fifth-grid .second-grid-container .link a {
+  color: #f43;
+  text-decoration: none;
+}
+
+.fifth-grid .second-grid-container .header {
+  color: #f43;
+}
+
 /* style for small screen */
 
 @media only screen and (max-width: 768px) {
   .black-nav,
   .white-nav .menu-white .tnw {
     display: none;
+  }
+
+  .fifth-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven"
+      "eight"
+      "nine";
+    grid-gap: 15px;
+    padding: 10px;
+  }
+
+  .fifth-grid .second-grid-container .header {
+    width: 60%;
+    float: left;
+  }
+
+  .fifth-grid .second-grid-container .link {
+    width: 40%;
+    text-align: right;
+    float: right;
+    padding-top: 5px;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  .fourth-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven"
+      "eight"
+      "nine";
+    grid-gap: 15px;
+    padding: 10px;
+  }
+
+  .fourth-grid .one {
+    grid-area: one;
+  }
+
+  .fourth-grid .two {
+    grid-area: two;
+  }
+
+  .fourth-grid .three {
+    grid-area: three;
+  }
+
+  .fourth-grid .four {
+    grid-area: four;
+  }
+
+  .fourth-grid .five {
+    grid-area: five;
+  }
+
+  .fourth-grid .six {
+    grid-area: six;
+  }
+
+  .fourth-grid .seven {
+    grid-area: seven;
+  }
+
+  .fourth-grid .eight {
+    grid-area: eight;
+  }
+
+  .fourth-grid .nine {
+    grid-area: nine;
   }
 
   .third-grid {
@@ -376,16 +621,6 @@ body {
     padding-left: 15px;
   }
 
-  .second-grid .second-grid-container h2 {
-    color: #f42;
-    font-family: sans-serif;
-    font-weight: bold;
-  }
-
-  .second-grid-text h5 {
-    margin-bottom: 5px;
-  }
-
   .second-grid-container {
     display: flex;
     flex-direction: row;
@@ -425,70 +660,6 @@ body {
 
   .second-grid .nine {
     grid-area: nine;
-  }
-
-  .second-grid-container .image1 {
-    background-image: url(assets/box1.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-  }
-
-  .second-grid-container .image2 {
-    background-image: url(assets/box2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-  }
-
-  .second-grid-container .image3 {
-    background-image: url(assets/boxo3.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-  }
-
-  .second-grid-container .image4 {
-    background-image: url(assets/box4.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-  }
-
-  .second-grid-container .image5 {
-    background-image: url(assets/box5.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-  }
-
-  .second-grid-container .image6 {
-    background-image: url(assets/third-grid-image.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-  }
-
-  .second-grid-container .image7 {
-    background-image: url(assets/box7.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-  }
-
-  .second-grid-container .image8 {
-    background-image: url(assets/box8.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
   }
 
   .first-grid {
@@ -589,6 +760,106 @@ body {
 @media only screen and (min-width: 768px) and (max-width: 1003px) {
   .program {
     display: none;
+  }
+
+  .second-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas:
+      "one one one"
+      "two three four"
+      "five six seven"
+      "eight nine .";
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .second-grid .one {
+    grid-area: one;
+  }
+
+  .second-grid .two {
+    grid-area: two;
+  }
+
+  .second-grid .three {
+    grid-area: three;
+  }
+
+  .second-grid .four {
+    grid-area: four;
+  }
+
+  .second-grid .five {
+    grid-area: five;
+  }
+
+  .second-grid .six {
+    grid-area: six;
+  }
+
+  .second-grid .seven {
+    grid-area: seven;
+  }
+
+  .second-grid .eight {
+    grid-area: eight;
+  }
+
+  .second-grid .nine {
+    grid-area: nine;
+  }
+
+  .first-grid {
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "first first second"
+      "first first third";
+    grid-gap: 10px;
+    height: 632px;
+  }
+
+  .first-foto {
+    grid-area: first;
+    position: relative;
+  }
+
+  .second-grid-image {
+    width: 100%;
+    height: 75px;
+  }
+
+  .second-grid-text {
+    width: 100%;
+    height: 75px;
+    padding-left: 15px;
+  }
+
+  .second-grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second-foto {
+    grid-area: second;
+    position: relative;
+  }
+
+  .third-foto {
+    grid-area: third;
+    position: relative;
+  }
+
+  .container-text {
+    width: 95%;
+    margin: 0 auto;
+    height: 114px;
+    position: absolute;
+    padding-left: 10px;
+    bottom: 40px;
   }
 
   .black-nav {
