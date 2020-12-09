@@ -2,39 +2,38 @@
 This project is a clone of a thenextweb.com website. The page is responsive
 
 # Getting started :
-this website can be viewd better on the screen size of of 1920 X 1080 in Mozilla firefox browser.
-you can also download the repo and open the ''index.html" file with Mozilla Firefox.
+This website has been designed for a screen size of 1920 X 1080 in Mozilla Firefox browser.
+You can also download the repo and open the "index.html" file with Mozilla Firefox.
 
-![screenshot]()
+![screenshot](assets/screenshot.jpg)
 
-The purpose of these project it to create a similar looking website of thenexweb.com  using html and css
+The purpose of these project is to create a similar looking website to thenexweb.com using HTML and CSS.
 
 ## BUILT WITH
 
     -HTML
     -CSS
-    -scss
 
 ## LIVE DEMO
 
-[Live Demo Link]()
+[Live Demo Link](https://widzthedvloper.github.io/TNW-C/)
 
 ##  AUTHORS
 
-👤 **Author1**
+👤 **Widzmarc Jean Nesly Phelle**
 
 - GitHub: [@githubhandle](https://github.com/widzthedvloper)
 - Twitter: [@twitterhandle](https://twitter.com/widzthedvloper)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/widzmarc-jean-nesly-phelle-252a26129/)
 
-👤 **Author2**
+👤 **Denis Lafontant**
 
-- GitHub: [@githubhandle](https://github.com/RokoVarano)
-- Twitter: [@twitterhandle](https://twitter.com/RodrigoIbacet11)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/rodrigo-ibaceta-a8657611a/)
+- GitHub: [@icebox827](https://github.com/icebox827)
+- Twitter: [@heracles2k5](https://twitter.com/@heracles2k5)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/denis-lafontant-37031439/)
 
 ## SHOW YOUR SUPPORT
-Give a * if you like the project
+Give a :star: if you like this project.
 
 ## 📝 LICENSE
-This project as no license
+MIT
