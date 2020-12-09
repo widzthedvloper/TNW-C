@@ -1108,6 +1108,7 @@ a {
       "num5 num6 num7 num8";
     grid-gap: 10px;
     padding: 10px;
+    margin: 1rem 4rem;
   }
 
   .fifth-grid .one {
@@ -1145,6 +1146,7 @@ a {
       "num10 num11 num12";
     grid-gap: 10px;
     padding: 10px;
+    margin: 1rem 4rem;
   }
 
   .third-grid {
@@ -1156,6 +1158,7 @@ a {
       "num3 num4 num5 num6";
     grid-gap: 10px;
     padding: 10px;
+    margin: 1rem 4rem;
   }
 
   .third-grid .two .third-grid-list li {
@@ -1204,6 +1207,7 @@ a {
       "six seven eight nine";
     grid-gap: 10px;
     padding: 10px;
+    margin: 1rem 4rem;
   }
 
   .second-grid .second-grid-container .second-grid-image {
