@@ -1336,7 +1336,8 @@ h5 {
       "first first third";
     grid-gap: 10px;
     height: 632px;
-    margin: 5px 20px;
+    margin: 5px auto;
+    width: 95vw;
   }
 
   .first-foto {
